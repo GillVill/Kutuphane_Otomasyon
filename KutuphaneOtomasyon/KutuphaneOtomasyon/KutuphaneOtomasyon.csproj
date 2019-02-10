@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93ED6AA5-D04A-48D3-B9DF-855B45590BE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtomasyon</RootNamespace>
+    <AssemblyName>KutuphaneOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Islem.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IslemGecmisi.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KitapIadeDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapIadeDetay.Designer.cs">
+      <DependentUpon>KitapIadeDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapIadeEt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapIadeEt.Designer.cs">
+      <DependentUpon>KitapIadeEt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapOduncAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>KitapOduncAl.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategori.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriEkle.Designer.cs">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KitapAramaSonuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAramaSonuc.Designer.cs">
+      <DependentUpon>KitapAramaSonuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapDetay.Designer.cs">
+      <DependentUpon>KitapDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapListesi.Designer.cs">
+      <DependentUpon>KitapListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapOduncAlma.cs" />
+    <Compile Include="Kullanici.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciDuzenle.Designer.cs">
+      <DependentUpon>KullaniciDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelKutuphane.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelKutuphane.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelKutuphane.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelKutuphane.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelKutuphane.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkle.Designer.cs">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapEkle.Designer.cs">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi.Designer.cs">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yayinevi.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YayineviEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YayineviEkle.Designer.cs">
+      <DependentUpon>YayineviEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YayineviKitap.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YayineviListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YayineviListesi.Designer.cs">
+      <DependentUpon>YayineviListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazar.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YazarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarEkle.Designer.cs">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YazarListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarListesi.Designer.cs">
+      <DependentUpon>YazarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yetki.cs">
+      <DependentUpon>ModelKutuphane.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapIadeDetay.resx">
+      <DependentUpon>KitapIadeDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapIadeEt.resx">
+      <DependentUpon>KitapIadeEt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapOduncAl.resx">
+      <DependentUpon>KitapOduncAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriEkle.resx">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAramaSonuc.resx">
+      <DependentUpon>KitapAramaSonuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapDetay.resx">
+      <DependentUpon>KitapDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapListesi.resx">
+      <DependentUpon>KitapListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciDuzenle.resx">
+      <DependentUpon>KullaniciDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEkle.resx">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="KitapEkle.resx">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi.resx">
+      <DependentUpon>OgrenciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YayineviEkle.resx">
+      <DependentUpon>YayineviEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YayineviListesi.resx">
+      <DependentUpon>YayineviListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarEkle.resx">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarListesi.resx">
+      <DependentUpon>YazarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelKutuphane.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelKutuphane.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelKutuphane.edmx.diagram">
+      <DependentUpon>ModelKutuphane.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelKutuphane.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelKutuphane.edmx</DependentUpon>
+      <LastGenOutput>ModelKutuphane.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelKutuphane.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelKutuphane.edmx</DependentUpon>
+      <LastGenOutput>ModelKutuphane.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

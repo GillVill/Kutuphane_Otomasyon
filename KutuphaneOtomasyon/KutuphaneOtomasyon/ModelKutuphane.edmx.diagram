@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8739fe59e905483b858925fed4816312" Name="Diagram1">
+        <EntityTypeShape EntityType="EFKutuphaneModel.Islem" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Kategori" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Kitap" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Kullanici" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Ogrenci" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Yazar" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Yetki" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_Islem_Kitap" ManuallyRouted="false" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_Islem_Ogrenci" ManuallyRouted="false" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_Kitap_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_Kitap_Yazar" ManuallyRouted="false" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_Kullanici_Yetki" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.Yayinevi" Width="1.5" PointX="5.375" PointY="7.75" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.YayineviKitap" Width="1.5" PointX="10.625" PointY="7.25" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_YayıneviKitap_Kitap1" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_YayıneviKitap_Yayinevi1" />
+        <EntityTypeShape EntityType="EFKutuphaneModel.IslemGecmisi" Width="1.5" PointX="10.25" PointY="3.375" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_IslemGecmisi_Kitap" />
+        <AssociationConnector Association="EFKutuphaneModel.FK_IslemGecmisi_Ogrenci" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
